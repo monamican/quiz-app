@@ -1,0 +1,31 @@
+/* The main box wrapping the question */
+.card {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 30px auto;
+  position: relative; /* Required so the absolute bookmark button stays inside the card */
+  background-color: white;
+  max-width: 500px;
+}
+
+.question,
+.answer {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Flexbox puts the tags in a neat row */
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background-color: #ccc;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
