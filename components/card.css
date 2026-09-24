@@ -5,13 +5,16 @@
   padding: 30px 20px;
   margin: 30px auto;
   position: relative; /* Required so the absolute bookmark button stays inside the card */
-  background-color: white;
+  background-color: rgb(153, 255, 0);
   max-width: 500px;
 }
 
 .question,
 .answer {
   text-align: center;
+  font-family:
+    Bradley Hand,
+    cursive;
   margin: 10px 0;
 }
 

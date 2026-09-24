@@ -1,21 +1,16 @@
-.header {
-  background-color: rgb(170, 141, 233);
+.footer {
+  background-color: rgb(72, 14, 196);
   text-align: center;
   padding: 20px;
   border-bottom: 2px solid #333;
 
   /* This keeps the header glued to the top when you scroll down */
   position: sticky;
-  top: 0;
+  bottom: 0;
   z-index: 10;
 }
 
 .header h1 {
   margin: 0;
   font-family: "OCR A Std", monospace;
-}
-.character-image {
-  width: 100px;
-  float: right;
-  margin-left: 15px; /* Optional: adds a little breathing room so text doesn't touch the image */
 }
