@@ -1,17 +1,41 @@
 .footer {
+  /* Replace the numbers inside rgb() with your desired colors */
   background-color: rgb(121, 60, 252);
   text-align: center;
-  padding: 1px;
-
-  /* position: fixed keeps it permanently glued to the bottom */
+  padding: 12px 0;
+  margin: 0;
+  font-family: "OCR A Std", monospace;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; /* Required when using position: fixed */
+  width: 100%;
   z-index: 4;
 }
 
-.footer {
-  margin: 0;
-  font-family: "OCR A Std", monospace;
+/* İkonları yatayda eşit dağıtmak için Flexbox kullanıyoruz */
+.icon-container {
+  display: flex;
+  justify-content: space-around; /* İkonların arasına eşit boşluk bırakır */
+  align-items: center;
+  max-width: 400px; /* Mobilde çok fazla açılmalarını engeller */
+  margin: 0 auto; /* Konteyneri tam ortaya hizalar */
+}
+
+/* İkonların boyut ve görünüm ayarları */
+.nav-icon {
+  width: 48px;
+  height: 48;
+  display: block;
+  margin: 0 auto 5px auto; /* Centers the icon above the text */
+}
+
+/* Tıklanma hissi vermek için üzerine gelince hafifçe büyür (Opsiyonel) */
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

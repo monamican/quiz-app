@@ -20,6 +20,7 @@
       <!-- Question 1 -->
       <article class="card">
         <button class="bookmark-btn" aria-label="Save bookmark">
+          <span>Book me mark!</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -57,6 +58,7 @@
       <!-- Question 2 -->
       <article class="card">
         <button class="bookmark-btn active" aria-label="Remove bookmark">
+          <span>Book me mark!</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -93,20 +95,18 @@
     </main>
 
     <footer class="navigation">
-      <a href="index.html" class="nav-item active" aria-label="Home">
-        <span class="icon-home-filled"></span>
+      <a href="index.html" class="nav-item active">
+        <img src="caravan.svg" class="nav-icon" />
       </a>
-      <a href="bookmarks.html" class="nav-item" aria-label="Bookmarks">
-        <span class="icon-bookmark-empty"></span>
+
+      <a href="bookmarks.html" class="nav-item">
+        <img src="bookmark-check.svg" alt="Bookmarks" class="nav-icon" />
       </a>
-      <a href="profile.html" class="nav-item" aria-label="Profile">
-        <span class="icon-profile-empty"></span>
+
+      <a href="profile.html" class="nav-item" aria-label="">
+        <img src="ghost.svg" alt="Profile" class="nav-icon" />
       </a>
     </footer>
-
-    <div class="footer">
-      <p>🎪 Powered by Quiz Nepa 🎰</p>
-    </div>
 
     <!-- Toggle logic for the bookmark buttons -->
     <script>
