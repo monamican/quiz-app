@@ -32,3 +32,31 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
+/* --- BOOKMARK BUTTON STYLES --- */
+
+/* Force the button to be visible and positioned in the top right */
+.bookmark-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20 px;
+  color: #f21111; /* Forces the outline to be black so you can see it */
+  z-index: 10; /* Ensures it stays on top of the text */
+  display: block;
+}
+
+/* Make sure the SVG sizes properly */
+.bookmark-btn svg {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* Fill the icon with black when active */
+.bookmark-btn.active svg {
+  fill: #f21111;
+}
