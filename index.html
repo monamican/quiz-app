@@ -19,22 +19,37 @@
     <main class="content">
       <!-- Question 1 -->
       <article class="card">
-        <button class="bookmark-btn" aria-label="Save bookmark">
-          <span>Book me mark!</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-          </svg>
+        <!-- We use a label instead of a button -->
+<label class="bookmark-btn" style="cursor: pointer; position: absolute; top: 15px; right: 15px; display: flex; align-items: center; gap: 5px; font-weight: bold; font-family: sans-serif;">
+  
+  <!-- This hidden checkbox does the "magic" of remembering the click -->
+  <input type="checkbox" class="hidden-checkbox" style="display: none;">
+  
+  <span>Book me mark!</span>
+  
+  <svg
+    class="bookmark-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+  </svg>
+</label>
+
+<!-- We put the CSS right inside the HTML using the <style> tag -->
+<style>
+  /* When the hidden checkbox is checked, find the SVG next to it and fill it with black */
+  .hidden-checkbox:checked ~ .bookmark-icon {
+    fill: #ef2d2d;
+  }
+</style>
         </button>
         <h2 class="question">
           If you buy a state-of-the-art $50 interactive pet toy, how will the
@@ -57,23 +72,29 @@
 
       <!-- Question 2 -->
       <article class="card">
-        <button class="bookmark-btn active" aria-label="Remove bookmark">
-          <span>Book me mark!</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-          </svg>
-        </button>
+        <label class="bookmark-btn" style="cursor: pointer; position: absolute; top: 15px; right: 15px; display: flex; align-items: center; gap: 5px; font-weight: bold; font-family: sans-serif;">
+  
+  <!-- This hidden checkbox does the "magic" of remembering the click -->
+  <input type="checkbox" class="hidden-checkbox" style="display: none;">
+  
+  <span>Book me mark!</span>
+  
+  <svg
+    class="bookmark-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+  </svg>
+</label>
+        
         <h2 class="question">
           How do dogs and cats make you feel guilty when you pack a suitcase for
           a vacation?
@@ -94,7 +115,7 @@
       </article>
     </main>
 
-    <footer class="navigation">
+    <footer class="navigation" style="background-color: rgb(153, 122, 219)">
       <a href="index.html" class="nav-item active">
         <img src="caravan.svg" class="nav-icon" />
       </a>
@@ -107,19 +128,5 @@
         <img src="ghost.svg" alt="Profile" class="nav-icon" />
       </a>
     </footer>
-
-    <!-- Toggle logic for the bookmark buttons -->
-    <script>
-      document.querySelectorAll(".bookmark-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          btn.classList.toggle("active");
-          const isBookmarked = btn.classList.contains("active");
-          btn.setAttribute(
-            "aria-label",
-            isBookmarked ? "Remove bookmark" : "Save bookmark",
-          );
-        });
-      });
-    </script>
   </body>
 </html>
