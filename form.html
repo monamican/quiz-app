@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Add Question</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+
+    <main class="content">
+      <article class="card">
+        <h2 class="question" style="text-align: center; margin-bottom: 20px">
+          Create a New Question
+        </h2>
+
+        <!-- The form to capture user input -->
+        <form
+          id="add-question-form"
+          style="display: flex; flex-direction: column; gap: 15px"
+        >
+          <!-- Question Input -->
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <label
+              for="new-question"
+              style="font-weight: bold; font-family: sans-serif"
+              >Question:</label
+            >
+            <textarea
+              id="new-question"
+              rows="3"
+              placeholder="Type your question here..."
+              style="
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-family: inherit;
+                resize: vertical;
+              "
+              required
+            ></textarea>
+          </div>
+
+          <!-- Answer Input -->
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <label
+              for="new-answer"
+              style="font-weight: bold; font-family: sans-serif"
+              >Answer:</label
+            >
+            <textarea
+              id="new-answer"
+              rows="3"
+              placeholder="Type the answer here..."
+              style="
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-family: inherit;
+                resize: vertical;
+              "
+              required
+            ></textarea>
+          </div>
+
+          <!-- Hashtag Input -->
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <label
+              for="new-tags"
+              style="font-weight: bold; font-family: sans-serif"
+              >Tags (Comma separated):</label
+            >
+            <input
+              type="text"
+              id="new-tags"
+              placeholder="e.g. html, css, coding"
+              style="
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-family: inherit;
+              "
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="btn-show-answer"
+            style="margin-top: 10px; width: 100%"
+          >
+            Submit Question
+          </button>
+        </form>
+      </article>
+    </main>
+
+    <!-- Navigation Footer (Updated to include 4 pages) -->
+    <footer class="navigation" style="background-color: rgb(153, 122, 219)">
+      <a href="index.html" class="nav-item">
+        <img src="caravan.svg" class="nav-icon" alt="Home" />
+      </a>
+      <a href="bookmarks.html" class="nav-item">
+        <img src="bookmark-check.svg" class="nav-icon" alt="Bookmarks" />
+      </a>
+    
+      </a>
+      <a href="profile.html" class="nav-item">
+        <img src="ghost.svg" class="nav-icon" alt="Profile" />
+      </a>
+       </a>
+      <a href="add.html" class="nav-item">
+        <img src="plus.png" class="nav-icon" alt="Profile" />
+      </a>
+      
+    </footer>
+  </body>
+</html>
