@@ -43,3 +43,16 @@
   color: #ffffff !important;
   border: 1px solid #ff6b6b !important;
 }
+/* --- DARK MODE TASARIMI --- */
+/* Sayfanın tamamı (body) karanlık moda geçince uygulanacaklar */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Kartların da rengini koyulaştırmak için */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #ffffff;
+}

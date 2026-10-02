@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+ 
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Add Question</title>
@@ -26,7 +27,7 @@
           <div style="display: flex; flex-direction: column; gap: 5px;">
             <label for="new-question" style="font-weight: bold; font-family: sans-serif;">Question:</label>
             <!-- maxlength="150" eklendi -->
-            <textarea id="new-question" rows="3" maxlength="150" placeholder="Type your question here..." style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
+            <textarea id="new-question" rows="3" maxlength="150"  style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
             <!-- Sayaç yazısı eklendi -->
             <small id="question-char-count" style="text-align: right; color: #555;">150 characters left</small>
           </div>
@@ -35,7 +36,7 @@
           <div style="display: flex; flex-direction: column; gap: 5px;">
             <label for="new-answer" style="font-weight: bold; font-family: sans-serif;">Answer:</label>
             <!-- maxlength="150" eklendi -->
-            <textarea id="new-answer" rows="3" maxlength="150" placeholder="Type the answer here..." style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
+            <textarea id="new-answer" rows="3" maxlength="150"  style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
             <!-- Sayaç yazısı eklendi -->
             <small id="answer-char-count" style="text-align: right; color: #555;">150 characters left</small>
           </div>
@@ -45,12 +46,12 @@
             <label
               for="new-tags"
               style="font-weight: bold; font-family: sans-serif"
-              >Tags (Comma separated):</label
+              >Hashtags</label
             >
             <input
               type="text"
               id="new-tags"
-              placeholder="e.g. html, css, coding"
+            
               style="
                 padding: 10px;
                 border-radius: 8px;
@@ -65,7 +66,7 @@
          <button type="submit" class="btn-show-answer" style="margin-top: 10px; width: 100%;">
   Submit Question
 </button>
-            Submit Question
+            
           </button>
         </form>
       </article>
@@ -90,6 +91,10 @@
       </a>
       
     </footer>
+    <!-- Bu butonu her sayfanın üst kısımlarına bir yere yerleştir -->
+<button class="dark-mode-toggle" style="padding: 10px; cursor: pointer; border-radius: 8px;">
+  🌙 Dark Mode Toggle
+</button> 
   </body>
   <!-- Formunun kapanış etiketinden hemen sonra bu boş div'i ekle -->
 </form>
@@ -100,4 +105,9 @@
 
 <!-- Kapanış </body> etiketinden hemen önce yeni JS dosyanı bağla -->
 <script src="form.js"></script>
+<script src="theme.js"></script>
 </html>
+
+
+
+
