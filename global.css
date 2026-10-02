@@ -1,0 +1,45 @@
+/* Kartın içindeki her şeyi dikeyde alt alta dizip yatayda tam ortaya hizalar */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Kartın başlığının da ortalı durması için */
+.profile-card .question {
+  text-align: center;
+  width: 100%;
+}
+
+/* Fotoğrafı tutan çerçevenin ortalanması */
+.profile-image-container {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Fotoğrafın kendisi */
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Etiketlerin (tag) yan yana ve ortalı durması için */
+.profile-card .tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Etiketlerin (tag) renk ayarları */
+.profile-card .tag {
+  background-color: #e33333 !important;
+  color: #ffffff !important;
+  border: 1px solid #ff6b6b !important;
+}
