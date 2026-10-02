@@ -1,5 +1,24 @@
 // 1. Formu ve kartların ekleneceği boş alanı seçiyoruz
 const form = document.getElementById("add-question-form");
+// --- KARAKTER SAYACI KODLARI ---
+const questionInput = document.getElementById("new-question");
+const questionCharCount = document.getElementById("question-char-count");
+
+const answerInput = document.getElementById("new-answer");
+const answerCharCount = document.getElementById("answer-char-count");
+
+// Soru kutusuna her harf girildiğinde (input) bu görev çalışır
+questionInput.addEventListener("input", () => {
+  const remaining = 150 - questionInput.value.length;
+  questionCharCount.textContent = `${remaining} characters left`;
+});
+
+// Cevap kutusuna her harf girildiğinde (input) bu görev çalışır
+answerInput.addEventListener("input", () => {
+  const remaining = 150 - answerInput.value.length;
+  answerCharCount.textContent = `${remaining} characters left`;
+});
+// -------------------------------
 const cardContainer = document.getElementById("new-cards-container");
 
 // 2. Formun 'submit' (gönderme) olayını dinliyoruz
