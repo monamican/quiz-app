@@ -12,11 +12,6 @@ form.addEventListener("submit", (event) => {
   const answerText = document.getElementById("new-answer").value;
   const tagsText = document.getElementById("new-tags").value;
 
-  // 4. Input alanlarındaki verileri okuyoruz
-  const questionText = document.getElementById("new-question").value;
-  const answerText = document.getElementById("new-answer").value;
-  const tagsText = document.getElementById("new-tags").value;
-
   // ARKA PLANDA GÖRMEK İÇİN EKLENEN KISIM:
   console.log("--- YENİ SORU GELDİ ---");
   console.log("Question:", questionText);
