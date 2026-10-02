@@ -23,47 +23,21 @@
           style="display: flex; flex-direction: column; gap: 15px"
         >
           <!-- Question Input -->
-          <div style="display: flex; flex-direction: column; gap: 5px">
-            <label
-              for="new-question"
-              style="font-weight: bold; font-family: sans-serif"
-              >Question:</label
-            >
-            <textarea
-              id="new-question"
-              rows="3"
-              placeholder="Type your question here..."
-              style="
-                padding: 10px;
-                border-radius: 8px;
-                border: 1px solid #ccc;
-                font-family: inherit;
-                resize: vertical;
-              "
-              required
-            ></textarea>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <label for="new-question" style="font-weight: bold; font-family: sans-serif;">Question:</label>
+            <!-- maxlength="150" eklendi -->
+            <textarea id="new-question" rows="3" maxlength="150" placeholder="Type your question here..." style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
+            <!-- Sayaç yazısı eklendi -->
+            <small id="question-char-count" style="text-align: right; color: #555;">150 characters left</small>
           </div>
 
           <!-- Answer Input -->
-          <div style="display: flex; flex-direction: column; gap: 5px">
-            <label
-              for="new-answer"
-              style="font-weight: bold; font-family: sans-serif"
-              >Answer:</label
-            >
-            <textarea
-              id="new-answer"
-              rows="3"
-              placeholder="Type the answer here..."
-              style="
-                padding: 10px;
-                border-radius: 8px;
-                border: 1px solid #ccc;
-                font-family: inherit;
-                resize: vertical;
-              "
-              required
-            ></textarea>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <label for="new-answer" style="font-weight: bold; font-family: sans-serif;">Answer:</label>
+            <!-- maxlength="150" eklendi -->
+            <textarea id="new-answer" rows="3" maxlength="150" placeholder="Type the answer here..." style="padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;" required></textarea>
+            <!-- Sayaç yazısı eklendi -->
+            <small id="answer-char-count" style="text-align: right; color: #555;">150 characters left</small>
           </div>
 
           <!-- Hashtag Input -->
